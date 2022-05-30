@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <a href="../index.html"><img class="header__icon" src="../assets/icono.png" alt=""></a>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anc" href="https://www.instagram.com/thiago.dalfino/">INSTAGRAM</a></li>
+                <li class="header__item"><a class="header__anc" href="https://www.twitch.tv/thiago__dal">TWITCH</a></li>
+                <li class="header__item"><a class="header__anc" href="https://twitter.com/dalfidown">TWITTER</a></li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav__list">
+                    <li class="nav__item"><a  class="nav__anc" href="./couching.html">COACHING</a></li>
+                    <li class="nav__item"><a  class="nav__anc" href="./equipo.html">EQUIPO</a></li>
+                    <li class="nav__item"><a  class="nav__anc" href="">CONTACTO</a></li>
+                    <li class="nav__item"><a  class="nav__anc" href="./patrocinadores.html">PATROCINADORES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>CONTACTO</h1>
+            <form action="" method="get" enctype="text/plain">
+                <label for="userName">Nombre y Apellido</label>
+                <input type="text" name="userName" id="userName">
+                <label for="userMail">Email</label>
+                <input type="email" name="userMail" id="userMail">
+                <br>
+                <div>
+                    <br>
+                   <label for="consulta">Tipo de consulta</label>
+                   <select name="consulta" id="consulta">                    
+                       <option value="Q">Queja</option>
+                       <option value="S">Solicitación</option>
+                       <option value="O">Otro</option>
+                   </select>
+                </div>
+                <br>
+                <div>
+                    <label for="text">Comentarios</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <label for="checkbox">Acepta los términos y condiciones</label>
+                <input type="checkbox" id="checkbox">
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPIAR">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        <nav>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anc" href="https://www.instagram.com/thiago.dalfino/">INSTAGRAM</a></li>
+                <li class="header__item"><a class="header__anc" href="https://www.twitch.tv/thiago__dal">TWITCH</a></li>
+                <li class="header__item"><a class="header__anc" href="https://twitter.com/dalfidown">TWITTER</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
