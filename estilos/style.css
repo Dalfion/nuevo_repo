@@ -30,9 +30,22 @@
 .header__icon{
     height: auto;
     width: 100%;
-    justify-content: center;
-    
+    justify-content: center;  
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 
 
@@ -78,6 +91,7 @@ a{
     color: rgb(0, 255, 0);
     font-weight: 400;
 }
+
 
 
 
