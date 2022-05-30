@@ -109,6 +109,15 @@ iframe{
     height: 530px;
 }
 
+.animate__bounceInUp{
+
+    animation-duration: 2s;
+}
+
+.animate__bounceIn{
+    animation-duration: 2s;
+}
+
 h1{
     font-size: 3rem;
     font-weight: 700;
