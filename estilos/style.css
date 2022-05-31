@@ -78,7 +78,9 @@ ul{
     line-height: 0%;
     font-size: 3rem;
     border: 20px;
+    
 }
+
 
 a{
     text-decoration: none;
@@ -88,13 +90,15 @@ a{
 .nav__anc{
     background-color: black;
     margin: 100px;
-    color: rgb(0, 255, 0);
+    color: white;
     font-weight: 400;
+    transition: font-weight 0s;
 }
 
-
-
-
+.nav__anc:hover{
+    color: rgb(3, 247, 3);
+    font-weight: 700;
+}
 
 .contenido__principal{
     display: flex;
@@ -140,11 +144,30 @@ ol li{
     background-color: rgb(43, 43, 43);
 }
 
+
+
+
 .descripcion{
     margin: 20px;
     padding: 50px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 
 }
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
 
 h2{
     font-size: 2rem;
@@ -163,6 +186,12 @@ p{
     padding: 10px;
     font-weight: 700;
     color: white;
+    transition: padding 0s;
+}
+
+.mejorar:hover{
+    color: rgb(3, 247, 3);
+    padding: 20px;
 }
 
 .table{
