@@ -10,7 +10,7 @@
 
 .icono{
     width: auto;
-    height: 160px;
+    height: 100px;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -25,7 +25,9 @@
     }
 }
 
-
+.nav-item:hover{
+    color: rgb(4, 255, 4);
+}
 
 
 
@@ -41,25 +43,6 @@ ul{
 
 
 
-.nav{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    padding: 50px 0px;
-    margin-top: 10px;
-}
-
-
-.nav__list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    line-height: 0%;
-    font-size: 3rem;
-    border: 20px;
-    
-}
 
 
 a{
