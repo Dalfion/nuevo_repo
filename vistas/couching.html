@@ -23,48 +23,78 @@
               <div class="collapse navbar-collapse justify-content-end bg-black" id="navbarNav">
                 <ul class="navbar-nav bg-black align-items-center">
                   <li class="nav-item">
-                    <a class="nav-link fs-1 bg-black" href="./vistas/couching.html">COACHING</a>
+                    <a class="nav-link fs-1 bg-black" href="./couching.html">COACHING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fs-1  bg-black" href="./vistas/equipo.html">EQUIPO</a>
+                    <a class="nav-link fs-1  bg-black" href="./equipo.html">EQUIPO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fs-1  bg-black" href="./vistas/contacto.html">CONTACTO</a>
+                    <a class="nav-link fs-1  bg-black" href="./contacto.html">CONTACTO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fs-1  bg-black" href="./vistas/patrocinadores.html">MARCAS</a>
+                    <a class="nav-link fs-1  bg-black" href="./patrocinadores.html">MARCAS</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-    <main>
-        <section class="container-fluid">
-           <h1>CONTRATAR SERVICIO DE COACHING</h1>
-           <form action="" method="get" enctype="text/plain">
-            <label for="name">TITULAR</label>
-            <input type="text" id="name">
-            <br>
-            <label for="cardNumber">NUMERO DE TARJETA</label>
-            <input type="number" id="cardNumber">
-            <br>
-            <label for="date">FECHA DE VENCIMIENTO</label>
-            <input type="date" id="date">
-            <br>
-            <label for="code">CODIGO DE SEGURIDAD</label>
-            <input type="number" id="code">
-            <br>
-            <label for="disc">DISCORD</label>
-            <input type="text" id="disc">
-            <br>
-            <input type="submit" id="send" value="PAGAR">
-            <input type="reset" id="rst" value="LIMPIAR">
-           </form>
+    <main class="container-fluid p-0">
+        <section class="row">
+           <h1 class="d-flex justify-content-center">CONTRATAR SERVICIO DE COACHING</h1>
+           <img class="img-fluid p-0" src="../assets/54287-valorant.jpg" alt="">
+           <form class="row p-5 bg-black">
+            <div class="col-md-6 bg-black">
+              <label for="inputCardnumber" class="form-label text-light fs-2 fw-semibold bg-black">NUMERO DE TARJETA</label>
+              <input type="number" class="form-control" id="inputCardnumber">
+            </div>
+            <div class="col-md-2 bg-black">
+                <label for="inputCvv" class="form-label text-light fs-2 fw-semibold bg-black">CVV</label>
+                <input type="number" class="form-control" id="inputCvv">
+              </div>
+            <div class="col-md-6 bg-black">
+              <label for="inputUsername" class="form-label text-light fs-2 fw-semibold bg-black">NOMBRE DEL TITULAR</label>
+              <input type="text" class="form-control" id="inputUsername">
+            </div>
+            <div class="col-6 bg-black">
+              <label for="inputDate" class="form-label text-light fs-2 fw-semibold bg-black">VENCIMIENTO</label>
+              <input type="month" class="form-control" id="inputDate">
+            </div>
+            <div class="col-8 bg-black">
+              <label for="inputAdress" class="form-label text-light fs-2 fw-semibold bg-black">DIRECCION</label>
+              <input type="text" class="form-control" id="inputAdress">
+            </div>
+            <div class="col-8 bg-black">
+                <label for="inputEmail" class="form-label text-light fs-2 fw-semibold bg-black">EMAIL</label>
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+            <div class="col-md-6 bg-black">
+              <label for="inputDisc" class="form-label text-light fs-2 fw-semibold bg-black">DISCORD</label>
+              <input type="text" class="form-control" id="inputDisc">
+            </div>
+            <div class="col-6 bg-black">
+                <label class="form-label text-light fs-2 fw-semibold bg-black" for="idNumber">NUMERO DE ID</label>
+                <div class="input-group">
+                  <div class="input-group-text">#</div>
+                  <input type="number" class="form-control" id="idNumber">
+                </div>
+            </div>
+            <div class="col-12 p-5 bg-black">
+              <div class="form-check bg-black">
+                <input class="form-check-input fs-2" type="checkbox" id="gridCheck">
+                <label class="form-check-label fs-2 text-light bg-black" for="gridCheck">
+                  ESTOY DE ACUERDO CON LA COMPRA DE ESTE SERVICIO
+                </label>
+              </div>
+            </div>
+            <div class="col-12 bg-black">
+              <button type="submit" class="mejorar border-0">ENVIAR</button>
+              <button type="reset" class="mejorar border-0">LIMPIAR</button>
+            </div>
+          </form>
              
         </section>
     </main>
-    <hr>
     <div class="container-fluid">
         <footer class="footer">
             <nav class="row">
