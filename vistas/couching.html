@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,33 @@
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__icon" src="../assets/icono.png" alt=""></a>
-            <ul class="header__list">
-                <li class="header__item"><a class="header__anc" href="https://www.instagram.com/thiago.dalfino/">INSTAGRAM</a></li>
-                <li class="header__item"><a class="header__anc" href="https://www.twitch.tv/thiago__dal">TWITCH</a></li>
-                <li class="header__item"><a class="header__anc" href="https://twitter.com/dalfidown">TWITTER</a></li>
-            </ul>
-        </nav>
-        <nav class="nav">
-            <ul class="nav__list">
-                    <li class="nav__item"><a  class="nav__anc" href="">COACHING</a></li>
-                    <li class="nav__item"><a  class="nav__anc" href="./equipo.html">EQUIPO</a></li>
-                    <li class="nav__item"><a  class="nav__anc" href="./contacto.html">CONTACTO</a></li>
-                    <li class="nav__item"><a  class="nav__anc" href="./patrocinadores.html">MARCAS</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg m-0 p-0">
+            <div class="container-fluid bg-black m-0 p-0">
+              <a class="navbar-brand p-0 m-0" aria-current="page" href="../index.html"><img class="icono" src="../assets/icono.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-black" id="navbarNav">
+                <ul class="navbar-nav bg-black align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link fs-1 bg-black" href="./vistas/couching.html">COACHING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-1  bg-black" href="./vistas/equipo.html">EQUIPO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-1  bg-black" href="./vistas/contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-1  bg-black" href="./vistas/patrocinadores.html">MARCAS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <section>
+        <section class="container-fluid">
            <h1>CONTRATAR SERVICIO DE COACHING</h1>
            <form action="" method="get" enctype="text/plain">
             <label for="name">TITULAR</label>
@@ -56,15 +65,22 @@
         </section>
     </main>
     <hr>
-    <footer class="footer">
-        <nav>
-            <ul class="header__list">
-                <li class="header__item"><a class="header__anc" href="https://www.instagram.com/thiago.dalfino/">INSTAGRAM</a></li>
-                <li class="header__item"><a class="header__anc" href="https://www.twitch.tv/thiago__dal">TWITCH</a></li>
-                <li class="header__item"><a class="header__anc" href="https://twitter.com/dalfidown">TWITTER</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="container-fluid">
+        <footer class="footer">
+            <nav class="row">
+                <ul class="header__list p-3 d-flex justify-content-around" id="footer__redes">
+                    <li class="header__item"><a class="nav-link--black column" href="https://www.instagram.com/thiago.dalfino/">INSTAGRAM</a></li>
+                    <li class="header__item"><a class="nav-link--black column" href="https://www.twitch.tv/thiago__dal">TWITCH</a></li>
+                    <li class="header__item"><a class="nav-link--black column" href="https://twitter.com/dalfidown">TWITTER</a></li>
+                </ul>
+            </nav>
+        </footer>
+      </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
