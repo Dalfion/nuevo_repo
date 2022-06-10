@@ -1,0 +1,104 @@
+@import "./vars";
+
+.icono{
+    width: auto;
+    height: 100px;
+    animation: $animation;
+}
+
+img{
+    
+    animation: $animation;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+
+
+.nav-link{
+    color: white;
+    padding: 10px;
+
+    &__black{
+        color: $black;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    &:hover{
+        color: $light-green;
+    
+    }
+
+    &__black:hover{
+        color: $light-green;
+    }
+}
+
+
+.slide img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.img-fluid{
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: $black;
+    padding: 20px;
+    margin: 0;
+    color: $light-green;
+}
+
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.mejorar{
+    font-size: 2rem;
+    background-color: $black;
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    transition: padding 0s;
+    text-decoration: none;
+
+    &:hover{
+        color: $light-green;
+        padding: 20px;
+    }
+}
+
+
+
+.table{
+    font-size: 2rem;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
