@@ -4,14 +4,24 @@
     width: auto;
     height: 100px;
     animation: $animation;
+    animation-name: aparecer;
 }
 
 img{
     
     animation: $animation;
+    animation-name: aparecer;
 
 }
 
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 ul{
     list-style: none;
@@ -24,7 +34,7 @@ ul{
     color: white;
     padding: 10px;
 
-    &__black{
+    &--black{
         color: $black;
         text-decoration: none;
         padding: 10px;
@@ -35,7 +45,7 @@ ul{
     
     }
 
-    &__black:hover{
+    &--black:hover{
         color: $light-green;
     }
 }
@@ -94,11 +104,4 @@ p{
     font-size: 2rem;
 }
 
-@keyframes aparecer {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+

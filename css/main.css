@@ -10,13 +10,35 @@
 .icono {
   width: auto;
   height: 100px;
-  -webkit-animation: 2s, aparecer, 1;
-          animation: 2s, aparecer, 1;
+  -webkit-animation: 2s, 1;
+          animation: 2s, 1;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
 }
 
 img {
-  -webkit-animation: 2s, aparecer, 1;
-          animation: 2s, aparecer, 1;
+  -webkit-animation: 2s, 1;
+          animation: 2s, 1;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 ul {
@@ -28,7 +50,7 @@ ul {
   padding: 10px;
 }
 
-.nav-link__black {
+.nav-link--black {
   color: black;
   text-decoration: none;
   padding: 10px;
@@ -38,7 +60,7 @@ ul {
   color: #00ff00;
 }
 
-.nav-link__black:hover {
+.nav-link--black:hover {
   color: #00ff00;
 }
 
@@ -92,24 +114,6 @@ p {
 
 .table {
   font-size: 2rem;
-}
-
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 768px) {
