@@ -2,3 +2,21 @@ $light-green: #00ff00;
 $black: black;
 $animation: 2s, 1;
 
+$redes:(
+    ttt: #5bdeff,
+    tch: #9900ff,
+    ig: #e100ff
+);
+
+@each $red, $color in $redes {
+    .nav-link--#{$red}:hover{
+        color: $color;
+    }
+}
+    
+$links: (
+    color: black,
+    deco: none
+);
+
+
