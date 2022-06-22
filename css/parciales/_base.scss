@@ -91,12 +91,40 @@ h2{
     }
 }
 
+span{
+    color: $light-green;
+}
+
+.imagenes{
+    height: 20vh;
+    padding: 0px;
+    object-fit: cover;
+}
+
+.img2{
+    height: 50vh;
+    object-fit: cover;
+
+}
+
+.img3{
+    width: auto;
+    object-fit: contain;
+}
+.compra{
+    @extend.nav-link
+}
+
 p{
     font-size: 1.5rem;
     margin: 20px;
     @include responsive{
         font-size: 1rem;
     }
+}
+
+.head{
+    color: $light-green;
 }
 
 .mejorar{

@@ -44,33 +44,20 @@
     <main>
         <section>
             <h1>CONTACTO</h1>
+            <img class="img2 container-fluid p-0" src="../assets/neon.jpg" alt="">
             <form action="" method="get" enctype="text/plain">
-                <label for="userName">Nombre y Apellido</label>
-                <input type="text" name="userName" id="userName">
-                <label for="userMail">Email</label>
-                <input type="email" name="userMail" id="userMail">
-                <br>
-                <div>
-                    <br>
-                   <label for="consulta">Tipo de consulta</label>
-                   <select name="consulta" id="consulta">                    
-                       <option value="Q">Queja</option>
-                       <option value="S">Solicitación</option>
-                       <option value="O">Otro</option>
-                   </select>
-                </div>
-                <br>
-                <div>
-                    <label for="text">Comentarios</label>
-                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                </div>
-                <label for="checkbox">Acepta los términos y condiciones</label>
-                <input type="checkbox" id="checkbox">
-                <div>
-                    <input type="submit" value="ENVIAR">
-                    <input type="reset" value="LIMPIAR">
-                </div>
-                
+              <div class="bg-black fs-2 p-2">
+                <label for="exampleFormControlInput1" class="form-label bg-black text-light">CORREO ELECTRONICO</label>
+                <input type="email" class="form-control p-2" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="bg-black fs-2 p-2">
+                <label for="exampleFormControlTextarea1" class="form-label bg-black text-light">SU CONSULTA</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="col-12 bg-black p-2">
+                <button type="submit" class="mejorar p-1 border-0">ENVIAR</button>
+                <button type="reset" class="mejorar p-1 border-0">LIMPIAR</button>
+              </div>
             </form>
         </section>
     </main>

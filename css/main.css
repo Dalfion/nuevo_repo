@@ -69,13 +69,13 @@ ul {
   list-style: none;
 }
 
-.nav-link, .nav-link:hover, .mejorar {
+.nav-link, .nav-link:hover, .compra, .mejorar {
   color: white;
   text-decoration: none;
   padding: 10px;
 }
 
-.nav-link:hover, .mejorar:hover {
+.nav-link:hover, .compra:hover, .mejorar:hover {
   color: #00ff00;
 }
 
@@ -133,6 +133,29 @@ h2 {
   }
 }
 
+span {
+  color: #00ff00;
+}
+
+.imagenes {
+  height: 20vh;
+  padding: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img2 {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img3 {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 p {
   font-size: 1.5rem;
   margin: 20px;
@@ -142,6 +165,10 @@ p {
   p {
     font-size: 1rem;
   }
+}
+
+.head {
+  color: #00ff00;
 }
 
 .mejorar {
